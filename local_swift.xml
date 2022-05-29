@@ -2,5 +2,20 @@
 <manifest>
 
  <!-- Trees -->
- 
+ <project path="device/mediatek/sepolicy" name="PixelExperience/device_mediatek_sepolicy" remote="github" revision="twelve"/>
+ <project path="device/mediatek/sepolicy_vndr" name="PixelExperience/device_mediatek_sepolicy_vndr" remote="github" revision="twelve"/>
+ <project path="device/xiaomi/lava" name="android_device_xiaomi_lava" remote="SwiftDevices" />
+ <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="SwiftDevices" />
+ <project path="kernel/xiaomi/mt6768" name="01soni247/MT6768-JRE205" remote="github" revision="twelve"/>
+ <project path="vendor/xiaomi/lava" name="android_vendor_xiaomi_lava" remote="SwiftDevices" />
+ <project path="vendor/xiaomi/mt6768-ims" name="Redmi-MT6768/android_vendor_xiaomi_mt6768-ims" remote="github" revision="twelve"/>
+
+<!-- Ims Patch -->
+<remove-project name="platform/frameworks/opt/telephony" />
+<project path="frameworks/opt/telephony" name="CipherOS/android_frameworks_opt_telephony" remote="github" revision="twelve-L"/>
+<remove-project name="platform/packages/modules/Wifi" />
+<project path="packages/modules/Wifi" name="CipherOS/android_packages_modules_Wifi" remote="github" revision="twelve-L"/>
+<remove-project name="platform/frameworks/opt/net/ims" />
+<project path="frameworks/opt/net/ims" name="CipherOS/android_frameworks_opt_net_ims" remote="github" revision="twelve-L"/>
+
 </manifest>
